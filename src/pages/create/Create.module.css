@@ -1,0 +1,49 @@
+.create {
+  background-color: var(--gray-0);
+}
+
+.ingredients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-2);
+}
+
+.ingredients span {
+  cursor: pointer;
+  background-color: var(--grape-1);
+  padding: var(--size-1) var(--size-2);
+  border-radius: var(--radius-2);
+  transition: all 200ms var(--ease-1);
+}
+
+.ingredients span:hover {
+  background-color: var(--red-5);
+}
+
+.ingBox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2);
+}
+
+.add-ing {
+  display: flex;
+  gap: var(--size-2);
+}
+
+.ingBox input {
+  max-width: 100%;
+  margin-right: var(--size-2);
+}
+
+.addSpan {
+  border-radius: var(--radius-2);
+  border: var(--border-size-1) solid var(--gray-3);
+  font-size: var(--font-size-3);
+  padding: var(--size-1) var(--size-2);
+}
+
+.addSpan:hover {
+  cursor: pointer;
+  background-color: var(--grape-2);
+}

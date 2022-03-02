@@ -1,13 +1,133 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import 'open-props/style';
+@import 'open-props/normalize';
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+html {
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* set up the body */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background-color: var(--gray-1);
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  border: var(--border-size-1) solid var(--gray-3);
+  margin: var(--size-fluid-5) auto;
+  padding: var(--size-fluid-3);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-3);
+  gap: var(--size-3);
+  font-size: var(--font-size-4);
+  background-color: var(--gray-0);
+}
+
+form h2 {
+  font-size: var(--font-size-6);
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: var(--border-size-1) solid var(--gray-3);
+  border-radius: var(--radius-2);
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  background-color: var(--blue-0);
+}
+
+form button {
+  display: inline-block;
+  align-self: center;
+  padding: var(--size-2) var(--size-4);
+  border-radius: var(--radius-2);
+  color: var(--violet-8);
+  background-color: var(--violet-2);
+  transition: all 200ms var(--ease-1);
+}
+
+form button:hover {
+  background-color: var(--violet-4);
+  color: var(--violet-1);
+  box-shadow: var(--shadow-5);
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.dark {
+  background-color: var(--gray-9);
+  height: auto;
 }

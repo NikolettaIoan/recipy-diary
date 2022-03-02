@@ -1,0 +1,63 @@
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--violet-5);
+  box-shadow: var(--shadow-4);
+  gap: var(--size-7);
+  font-weight: var(--font-weight-6);
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav h1 {
+  color: var(--gray-1);
+  font-size: var(--font-size-fluid-2);
+  border-bottom: 1px solid transparent;
+}
+
+.nav h1:hover,
+.nav h2:hover {
+  color: var(--lime-3);
+}
+
+.nav h2 {
+  color: var(--gray-1);
+  font-size: var(--font-size-fluid-1);
+  border: var(--border-size-1) solid var(--gray-1);
+  padding: 0.3em var(--size-fluid-1);
+  border-radius: var(--radius-conditional-3);
+}
+
+.nav button {
+  border-radius: var(--radius-conditional-3);
+  font-size: var(--font-size-fluid-1);
+  padding: 0.1em 0.7em;
+  color: var(--violet-8);
+  transition: all 300ms var(--ease-1);
+  background-color: var(--blue-6);
+}
+.nav button:hover {
+  color: var(--indigo-2);
+  background-color: var(--blue-8);
+  box-shadow: var(--shadow-5);
+}
+
+.name {
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-2);
+}
+
+.togglemode {
+  width: 3em;
+  height: 2em;
+  background-color: var(--blue-1);
+  border-radius: var(--radius-conditional-3);
+}

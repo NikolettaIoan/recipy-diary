@@ -1,0 +1,66 @@
+.reclist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-7);
+  justify-content: center;
+  align-items: center;
+  padding: var(--size-fluid-2);
+  margin: var(--size-fluid-3) auto;
+}
+
+.recipy {
+  width: var(--size-fluid-10);
+
+  aspect-ratio: var(--ratio-box);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+  border: var(--border-size-2) solid var(--gray-2);
+  padding: var(--size-3);
+  box-shadow: var(--shadow-3);
+  border-radius: var(--radius-2);
+  transition: transform 500ms var(--ease-in-out);
+  font-size: var(--font-size-3);
+  background-color: var(--gray-0);
+}
+
+.recipy:hover {
+  box-shadow: var(--shadow-4);
+  transform: scale(1.01);
+}
+.recipy h2 {
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-6);
+  color: var(--indigo-5);
+  width: 100%;
+  text-align: center;
+}
+
+.inglist {
+  display: flex;
+  align-items: center;
+  gap: var(--size-2);
+}
+
+.delete {
+  background-color: var(--red-3);
+  align-self: flex-end;
+  border-radius: var(--radius-1);
+  transition: all 500ms var(--ease-in-out);
+}
+
+.delete:hover {
+  background-color: var(--red-5);
+}
+
+.link {
+  color: var(--indigo-5);
+
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.link:hover {
+  color: var(--violet-9);
+  text-decoration: none;
+}

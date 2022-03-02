@@ -1,0 +1,28 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+
+  border: var(--border-size-1) solid var(--gray-2);
+  margin: var(--size-fluid-7) auto;
+  padding: var(--size-fluid-3);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-3);
+  gap: var(--size-2);
+  font-size: var(--font-size-7);
+}
+
+.box h2 {
+  text-align: center;
+  font-size: var(--font-size-fluid-2);
+  color: var(--gray-8);
+}
+
+.box p {
+  font-size: var(--font-size-fluid-1);
+}
+
+.box button {
+  display: inline-block;
+  align-self: center;
+}
