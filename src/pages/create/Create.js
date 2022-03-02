@@ -1,7 +1,6 @@
 import styles from './Create.module.css';
-import Card from '../../components/Card';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { addDoc, collection } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { useNavigate } from 'react-router-dom';

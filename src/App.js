@@ -7,7 +7,7 @@ import Recipe from './pages/recipe/Recipe';
 import Login from './pages/login/Login';
 import SignIn from './pages/signin/SignIn';
 import { useAuthContext } from './hooks/useAuthContext';
-import { FaMoon, FaSun } from 'react-icons/fa';
+import { FaMoon } from 'react-icons/fa';
 import { BsSunFill } from 'react-icons/bs';
 
 function App() {
