@@ -50,6 +50,7 @@ body {
   min-height: 100vh;
   font-family: var(--font-sans);
   background-color: var(--gray-1);
+  color: var(--gray-7);
 }
 
 /* make images easier to work with */
@@ -91,6 +92,7 @@ textarea {
   width: 100%;
   border: var(--border-size-1) solid var(--gray-3);
   border-radius: var(--radius-2);
+  background-color: var(--gray-0);
 }
 
 textarea:focus,
@@ -112,7 +114,7 @@ form button {
 form button:hover {
   background-color: var(--violet-4);
   color: var(--violet-1);
-  box-shadow: var(--shadow-5);
+  box-shadow: var(--shadow-4);
 }
 
 /* remove animations for people who've turned them off */
@@ -124,6 +126,13 @@ form button:hover {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@media (--OSdark) {
+  html {
+    background: var(--gray-2);
+    color: var(--gray-);
   }
 }
 

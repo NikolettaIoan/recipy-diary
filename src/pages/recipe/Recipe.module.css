@@ -22,3 +22,9 @@
 .recipe p {
   font-size: var(--font-size-fluid-1);
 }
+
+@media (--OSdark) {
+  .recipe {
+    box-shadow: var(--shadow-1);
+  }
+}
