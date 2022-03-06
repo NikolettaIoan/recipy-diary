@@ -12,7 +12,14 @@ function Navbar() {
   return (
     <nav className={styles.nav}>
       <Link to="/" className={styles.name}>
-        <h1>Recipe Diary {user && <span>for {user.displayName}</span>}</h1>
+        <h1>
+          Recipe Diary{' '}
+          {user && (
+            <span>
+              for <em>{user.displayName}</em>
+            </span>
+          )}
+        </h1>
       </Link>
 
       {user && (

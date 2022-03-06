@@ -18,10 +18,15 @@ function RecipeList({ recipies }) {
       {recipies.map((rec) => {
         return (
           <div key={rec.id} className={styles.recipy}>
-            <button className={styles.delete} onClick={() => deleteRep(rec.id)}>
-              ✖
-            </button>
-            <h2>{rec.title}</h2>
+            <div className={styles.head}>
+              <h2>{rec.title}</h2>
+              <button
+                className={styles.delete}
+                onClick={() => deleteRep(rec.id)}
+              >
+                ✖
+              </button>
+            </div>
             <div className={styles.inglist}>
               <b>Ingredients:</b>
               <span>{rec.ingredients.join(', ').substring(0, 30)}...</span>

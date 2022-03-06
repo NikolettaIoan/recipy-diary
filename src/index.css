@@ -11,7 +11,7 @@ html {
 html,
 body,
 #root {
-  height: 100%;
+  min-height: 100%;
 }
 
 /* Box sizing */
@@ -145,5 +145,5 @@ form button:hover {
 
 .dark {
   background-color: var(--gray-9);
-  height: auto;
+  /* min-height: 100%; */
 }
