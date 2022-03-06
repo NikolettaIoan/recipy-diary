@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   padding: var(--size-fluid-2);
-  margin: var(--size-fluid-3) auto;
+  margin: var(--size-fluid-2) auto;
 }
 
 .recipy {
@@ -64,5 +64,3 @@
   color: var(--violet-9);
   text-decoration: none;
 }
-
-

@@ -80,11 +80,13 @@ form {
   gap: var(--size-3);
   font-size: var(--font-size-4);
   background-color: var(--gray-0);
+  margin: 1rem auto;
 }
 
 form h2 {
   font-size: var(--font-size-6);
   text-align: center;
+  color: inherit;
 }
 
 input,
