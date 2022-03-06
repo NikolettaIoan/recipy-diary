@@ -70,8 +70,13 @@ function Create() {
               <span
                 className={styles.addSpan}
                 onClick={() => {
-                  setIngredients((prev) => [ing, ...prev]);
-                  setIng('');
+                  if (
+                    ing.trim().length > 0 &&
+                    !ingredients.includes(ing.trim())
+                  ) {
+                    setIngredients((prev) => [ing, ...prev]);
+                    setIng('');
+                  }
                 }}
               >
                 Add

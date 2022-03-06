@@ -8,6 +8,8 @@
   box-shadow: var(--shadow-4);
   gap: var(--size-7);
   font-weight: var(--font-weight-6);
+  position: fixed;
+  z-index: 1;
 }
 
 .nav a {
@@ -30,11 +32,11 @@
   font-size: var(--font-size-fluid-1);
   border: var(--border-size-1) solid var(--gray-1);
   padding: 0.3em var(--size-fluid-1);
-  border-radius: var(--radius-conditional-3);
+  border-radius: var(--radius-3);
 }
 
 .nav button {
-  border-radius: var(--radius-conditional-3);
+  border-radius: var(--radius-3);
   font-size: var(--font-size-fluid-1);
   padding: 0.1em 0.7em;
   color: var(--violet-8);
@@ -44,7 +46,7 @@
 .nav button:hover {
   color: var(--indigo-2);
   background-color: var(--blue-8);
-  box-shadow: var(--shadow-5);
+  box-shadow: var(--shadow-4);
 }
 
 .name {

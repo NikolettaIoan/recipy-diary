@@ -33,7 +33,7 @@ export const useSignUp = () => {
         setError(null);
       }
     } catch (error) {
-      console.log(error, 'COULD NOT CREATE USER');
+      console.log(error.message, 'COULD NOT CREATE USER');
       if (!isCancelled) {
         setError(error.message);
         setIsPending(false);

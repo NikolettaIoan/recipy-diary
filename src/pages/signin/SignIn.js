@@ -11,6 +11,7 @@ function SignIn() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (password === confPassword) {
       signup(email, password, name);
     } else {
@@ -56,7 +57,7 @@ function SignIn() {
         />
       </label>
       <button>SUBMIT</button>
-      {error && <p>{error}</p>}
+      {error && <p className="error">{error}</p>}
       {isPending && <p>{isPending}</p>}
     </form>
   );

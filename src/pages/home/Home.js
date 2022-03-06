@@ -15,8 +15,8 @@ function Home() {
 
   return (
     <div className={styles.home}>
-      {error && <h2>{error}</h2>}
-      {isPending && <p>{isPending}</p>}
+      {error && <h2 className="error">{error}</h2>}
+      {isPending && <p className="error">{isPending}</p>}
 
       {documents && <RecipeList recipies={documents} />}
     </div>

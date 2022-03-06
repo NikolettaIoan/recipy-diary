@@ -8,9 +8,9 @@
 .togglebutton {
   width: 2.5rem;
 
-  aspect-ratio: 1/1;
+  /* aspect-ratio: 1/1; */
   background-color: inherit;
-  margin: 1em;
+  margin: 0.3em;
 }
 
 .dark .moon {

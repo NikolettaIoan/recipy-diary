@@ -33,7 +33,7 @@ function Login() {
         />
       </label>
       <button>SUBMIT</button>
-      {error && <p>{error}</p>}
+      {error && <p className="error">{error}</p>}
       {isPending && <p>{isPending}</p>}
     </form>
   );

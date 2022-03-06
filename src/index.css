@@ -73,7 +73,7 @@ form {
   flex-direction: column;
   justify-items: center;
   border: var(--border-size-1) solid var(--gray-3);
-  margin: var(--size-fluid-5) auto;
+  margin: var(--size-fluid-3) auto;
   padding: var(--size-fluid-3);
   border-radius: var(--radius-2);
   box-shadow: var(--shadow-3);
@@ -115,6 +115,11 @@ form button:hover {
   background-color: var(--violet-4);
   color: var(--violet-1);
   box-shadow: var(--shadow-4);
+}
+
+.error {
+  color: var(--red-5);
+  margin: var(--size-2) auto;
 }
 
 /* remove animations for people who've turned them off */
